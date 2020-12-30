@@ -293,7 +293,7 @@ def pdf_extraction(filePath):
     from PyPDF2 import PdfFileReader
     
     
-    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'C:/Users/jahid/Desktop/pdr.cloud/cloud.google/my-key.json'
+    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = ''
   
     fileName=os.path.basename(filePath)
     
@@ -329,7 +329,7 @@ def pdf_extraction(filePath):
    ##Saving the file as json file
    
    ##The folowing code depends on the environment
-    # outputFileNameNew='C:/Users/jahid/Desktop/pdr.cloud/dev staging/dataSource/filtered-Output/'+'FilteredJSON.json'
+    # outputFileNameNew='/dataSource/filtered-Output/'+'FilteredJSON.json'
     # print(outputFileNameNew)
    
     # with open(outputFileNameNew, 'w') as outfile:
@@ -345,7 +345,7 @@ import sys
 
 sys.stdout.write("hello from Python %s\n" % (sys.version,))
 
-path = 'C:/Users/jahid/Desktop/pdr.cloud/dev staging/dataSource/fileName.pdf'
+path = '/dataSource/fileName.pdf'
 
 pdf_extraction(path)
 
